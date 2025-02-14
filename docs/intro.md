@@ -2,46 +2,139 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## What is Version Control?
 
-## Getting Started
+Version Control Systems (VCS) are tools that help developers track and manage changes to code over time. Think of it as a "time machine" for your code that allows you to:
 
-Get started by **creating a new site**.
+- Track changes to files
+- Revert to previous versions
+- Collaborate with other developers
+- Maintain different versions of a project
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Why Use Version Control?
 
-### What you'll need
+### 🔑 Key Benefits
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- **History Tracking**: Keep a detailed record of who changed what and when
+- **Collaboration**: Multiple developers can work on the same project simultaneously
+- **Backup**: Your code is safely stored in remote repositories
+- **Branching**: Create different versions of your code for features or experiments
+- **Recovery**: Easily recover from mistakes by reverting to previous versions
 
-## Generate a new site
+## Types of Version Control Systems
 
-Generate a new Docusaurus site using the **classic template**.
+### 1. Local Version Control Systems (LVCS)
 
-The classic template will automatically be added to your project after you run the command:
+The simplest form of version control, storing changes in a local database.
+
+#### Characteristics:
+
+- ✅ Simple to use
+- ✅ Fast operations
+- ❌ No collaboration features
+- ❌ Risk of local system failure
+
+### 2. Centralized Version Control Systems (CVCS)
+
+A single server contains all versioned files and clients checkout files from this central place.
+
+#### Examples:
+
+- SVN (Subversion)
+- Perforce
+- CVS (Concurrent Versions System)
+
+#### Characteristics:
+
+- ✅ Better collaboration
+- ✅ More control over user access
+- ✅ Easier administration
+- ❌ Single point of failure
+- ❌ Limited offline work
+
+### 3. Distributed Version Control Systems (DVCS)
+
+Clients fully mirror the repository, including its complete history.
+
+#### Examples:
+
+- Git
+- Mercurial
+- Bazaar
+
+#### Characteristics:
+
+- ✅ Full backup of repository
+- ✅ Offline work capability
+- ✅ Better branching
+- ✅ More flexible workflows
+- ❌ Initial clone can be slower
+- ❌ Learning curve can be steeper
+
+## Core Concepts of Version Control
+
+### 1. Repository (Repo)
+
+A repository is a container for your project. It contains all files and their complete history.
+
+### 2. Commit
+
+A commit is a snapshot of your changes. It includes a unique ID, message, and timestamp.
 
 ```bash
-npm init docusaurus@latest my-website classic
+git commit -m "Add new feature"
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### 3. Branch
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+A branch is an independent line of development. It allows parallel work on different features.
 
 ```bash
-cd my-website
-npm run start
+git branch feature-name
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### 4. Merge
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Merging combines changes from different branches.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+```bash
+git merge feature-name
+```
+
+### 5. Clone
+
+Cloning creates a copy of a repository.
+
+```bash
+git clone https://github.com/user/repo.git
+```
+
+### 6. Pull
+
+Pulling updates your local repository with changes from a remote repository.
+
+```bash
+git pull origin main
+```
+
+### 7. Push
+
+Pushing sends your committed changes to a remote repository.
+
+```bash
+git push origin main
+```
+
+## Next Steps
+
+- Learn more advanced Git commands
+- Practice with small projects
+- Collaborate on open-source projects
+- Explore GitHub features
+- Set up continuous integration
+
+---
+
+This guide covers the basics of version control with Git and GitHub. As you continue your journey, you'll discover more advanced features and workflows that can enhance your development process.
