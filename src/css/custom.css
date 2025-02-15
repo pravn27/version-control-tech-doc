@@ -41,6 +41,7 @@
  /* Dark mode specific */
  --ifm-background-color: #1a1a1a;
  --ifm-font-color-base: #e6e6e6;
+ --ifm-heading-color: #e6e6e6;
  --docusaurus-highlighted-code-line-bg: rgba(8, 126, 164, 0.2);
 }
 

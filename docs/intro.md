@@ -127,14 +127,10 @@ Pushing sends your committed changes to a remote repository.
 git push origin main
 ```
 
-## Next Steps
+## Next
 
-- Learn more advanced Git commands
-- Practice with small projects
-- Collaborate on open-source projects
-- Explore GitHub features
-- Set up continuous integration
+- Learn more about Github
 
 ---
 
-This guide covers the basics of version control with Git and GitHub. As you continue your journey, you'll discover more advanced features and workflows that can enhance your development process.
+This guide covers the basics of version control system with GitHub. As you continue your journey, you'll discover more advanced features that can enhance your development process.
