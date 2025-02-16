@@ -16,6 +16,12 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <Link
+          className="button button--secondary button--lg"
+          to="/docs/category/github"
+        >
+          Github
+        </Link>
       </div>
     </header>
   );
@@ -30,7 +36,12 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <div style={{ marginTop: "20px" }}>
+          <Heading as="h2" className="text--center">
+            Why Version Control Systems are Essential in Software Development ?
+          </Heading>
+          <HomepageFeatures />
+        </div>
       </main>
     </Layout>
   );

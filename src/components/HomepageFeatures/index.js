@@ -4,46 +4,72 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Versioning & Change Tracking",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    title: "Tracking Changes",
     description: (
       <>
-        Tracks changes made to documentation over time. Allows rollbacks to
-        previous versions. Displays change history with timestamps and author
-        details.
+        Version control maintains a comprehensive history of all code changes,
+        allowing developers to: See what changed, when it changed, and who made
+        the change. Understand the codebase's evolution over time. Identify when
+        bugs were introduced. Revert to previous versions if necessary.
       </>
     ),
   },
   {
-    title: "Branching & Merging",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "Collaboration",
     description: (
       <>
-        Supports multiple versions of documentation via branches. Enables
-        merging changes from different branches. Helps manage stable and
-        development versions of docs.
+        Modern software development is rarely a solo effort. Version control
+        enables teams to: Work simultaneously on the same codebase without
+        overwriting each other's changes. Merge changes together. Review each
+        other's code. Discuss changes. Track issues and bugs.
       </>
     ),
   },
   {
-    title: "Role-Based Access Control",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "Branching and Experimentation",
     description: (
       <>
-        Admins can manage access for contributors and reviewers. Read-only or
-        edit access based on user roles. Secure authentication and
-        authorization.
+        Version control systems allow developers to: Create branches to work on
+        new features or fixes without affecting the main codebase. Experiment
+        with different approaches safely.
+      </>
+    ),
+  },
+  {
+    title: "Backup and Recovery",
+    description: (
+      <>
+        Version control serves as: An automatic backup system for your code. A
+        disaster recovery mechanism. Protection against hardware failures or
+        accidental deletions.
+      </>
+    ),
+  },
+  {
+    title: "Accountability and Auditability",
+    description: (
+      <>
+        In professional environments, version control provides: A record of who
+        made what changes and why. Traceability for regulatory compliance.
+        Documentation of decision-making processes.
+      </>
+    ),
+  },
+  {
+    title: "Deployment and Release Management",
+    description: (
+      <>
+        Version control aids in: Creating stable release versions. Rolling back
+        problematic deployments. Maintaining multiple release versions.
+        Automating deployment processes.
       </>
     ),
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ title, description }) {
   return (
     <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>

@@ -16,15 +16,15 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://pravn27.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "pravn27", // Usually your GitHub org/user name.
+  projectName: "version-control-tech-doc", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -47,7 +47,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/pravn27/version-control-tech-doc/tree/master",
         },
         blog: {
           showReadingTime: true,
@@ -58,7 +58,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/pravn27/version-control-tech-doc/tree/master",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -89,12 +89,29 @@ const config = {
           //   position: "left",
           //   label: "About VS System",
           // },
-          { to: "/docs/intro", label: "About VS System", position: "left" },
-          { to: "/docs/category/github", label: "Github", position: "left" },
           {
-            href: "https://github.com/pravn27/version-control-tech-doc",
-            label: "GitHub",
+            to: "/docs/intro",
+            label: "About VS System",
+            position: "left",
+          },
+          {
+            to: "/docs/category/github",
+            label: "Github",
+            position: "left",
+          },
+          {
+            href: "https://github.com/pravn27",
             position: "right",
+            className: "header--github-link",
+            "aria-label": "GitHub repository",
+            title: "GitHub",
+          },
+          {
+            href: "https://www.linkedin.com/in/praveen-s-157b365a/",
+            position: "right",
+            className: "header--linkedin-link",
+            "aria-label": "LinkedIn profile",
+            title: "LinkedIn",
           },
         ],
       },
@@ -102,11 +119,11 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Github",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Github",
+                to: "/docs/category/github",
               },
             ],
           },
@@ -114,34 +131,34 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "GitHub",
+                href: "https://github.com/pravn27",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "X",
-                href: "https://x.com/docusaurus",
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/praveen-s-157b365a/",
               },
             ],
           },
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/pravn27",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/praveen-s-157b365a/",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Version Control Github tech docs. Built with Docusaurus`,
       },
       prism: {
         theme: prismThemes.github,
