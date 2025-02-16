@@ -80,16 +80,17 @@ const config = {
         title: "Version Controls",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "About VS System",
-          },
-          // { to: "/blog", label: "Blog", position: "left" },
+          // {
+          //   type: "docSidebar",
+          //   sidebarId: "sidebarDocsId",
+          //   position: "left",
+          //   label: "About VS System",
+          // },
+          { to: "/docs/intro", label: "About VS System", position: "left" },
+          { to: "/docs/category/github", label: "Github", position: "left" },
           {
             href: "https://github.com/pravn27/version-control-tech-doc",
             label: "GitHub",

@@ -34,4 +34,27 @@ sidebar_position: 2
 | `git cherry-pick [commitId]`       | Get specific commit changes from other source branch to current branch and merged                  | `git cherry-pick eadbcedabf0b9a054dbecd96cfe008e76e46368a`   |
 | `git revert [commitId]`            | Revert specific commits changes after committed with commit ID                                     | `git revert eadbcedabf0b9a054dbecd96cfe008e76e46368a`        |
 
+## Temporarily stored in locally with modified, tracked files to change branches
+
+**Use case of below**
+
+> After making some changes in files, and want to switch to different feature branch, with below commands save modified files and get back those modified files based on your needs. Below commands help you temporarily store your changes, allowing you to switch branches without losing your modifications.
+
+---
+
+| Command                       | Description                                                                         | Example                     |
+| ----------------------------- | ----------------------------------------------------------------------------------- | --------------------------- |
+| `git stash save ["name"]`     | Save temporarily modified file in name given                                        | `git stash save ["name"]`   |
+| `git stash list`              | List all stashed changes                                                            | `git stash list`            |
+| `git stash pop`               | Apply the latest stashed changes and remove them from the stash list                | `git stash pop`             |
+| `git stash pop ["name"]`      | Get modified files back with respect to feature branch and deleted from stash items | `git stash pop ["name"]`    |
+| `git stash apply [stash@{n}]` | Apply a specific stash without removing it from the stash list                      | `git stash apply stash@{0}` |
+| `git stash apply ["name"]`    | Get modified files back stash list & applied, but will not deleted from stash items | `git stash apply ["name"]`  |
+| `git stash drop [stash@{n}]`  | Delete / Remove a specific stash from the stash list                                | `git stash drop stash@{0}`  |
+| `git stash clear`             | Delete / Remove all stashed changes from the stash list                             | `git stash clear`           |
+| `git stash save ["message"]`  | Save your changes to the stash list with a message                                  | `git stash save "message"`  |
+| `git stash drop`              | Discard the changes from top of stash stack                                         | `git stash drop`            |
+
+---
+
 These commands cover the most frequently used operations in Git. Each command includes a brief description and an example to help you understand its usage.
