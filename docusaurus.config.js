@@ -13,21 +13,22 @@ const config = {
   title: "Version Controls",
   tagline:
     "Everything about version controls, its reference links & technical documentations",
-  favicon: "img/favicon.ico",
+  favicon: "/img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://pravn27.github.io/",
+  url: "https://pravn27.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/version-control-tech-doc/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "pravn27", // Usually your GitHub org/user name.
   projectName: "version-control-tech-doc", // Usually your repo name.
-
+  deploymentBranch: "gh-pages",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -80,7 +81,7 @@ const config = {
         title: "Version Controls",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.png",
+          src: "/img/logo.png",
         },
         items: [
           // {
