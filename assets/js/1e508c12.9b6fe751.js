@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkversion_control_tech_doc=self.webpackChunkversion_control_tech_doc||[]).push([[1572],{403:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/version-control-tech-doc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

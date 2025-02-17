@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkversion_control_tech_doc=self.webpackChunkversion_control_tech_doc||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/version-control-tech-doc/blog","blogTitle":"Blog","authorsListPath":"/version-control-tech-doc/blog/authors"}')}}]);
