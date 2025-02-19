@@ -12,4 +12,5 @@ sidebar_position: 3
 ## References links
 
 - [Github Complete Documentation](https://docs.github.com/en/get-started/quickstart/hello-world)
+- https://www.atlassian.com/git/glossary#commands
 - https://www.atlassian.com/git/tutorials/what-is-version-control
