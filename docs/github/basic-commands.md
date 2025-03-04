@@ -58,3 +58,37 @@ sidebar_position: 2
 ---
 
 These commands cover the most frequently used operations in Git. Each command includes a brief description and an example to help you understand its usage.
+
+## Cherry Pick
+
+- https://gist.github.com/grafikchaos/8223422
+
+- How to cherry pick multiple commits
+
+```bash
+git cherry-pick <commit-hash-1> <commit-hash-2> <commit-hash-3>
+```
+
+- How to cherry pick a range of commits
+
+```bash
+git cherry-pick <commit-hash-1>^..<commit-hash-2>
+```
+
+- How to cherry pick a commit from another branch
+
+```bash
+git cherry-pick <branch-name>/<commit-hash>
+```
+
+- How to cherry pick a commit from another repository
+
+```bash
+git cherry-pick <repository-url>/<commit-hash>
+```
+
+- How to cherry pick a commit from another repository and branch
+
+```bash
+git cherry-pick <repository-url>/<branch-name>/<commit-hash>
+```
