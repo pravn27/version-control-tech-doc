@@ -92,3 +92,18 @@ git cherry-pick <repository-url>/<commit-hash>
 ```bash
 git cherry-pick <repository-url>/<branch-name>/<commit-hash>
 ```
+
+## Git Rebase
+
+> While pushing the final feature branch to remotely, use squash to avoid multiple commits. Squash will make multiple commits into single commit
+
+1. Always rebase from master branch, make sure branch is up to date
+   ```bash
+   git rebase -i master
+   ```
+2. You should see a list of commits, each commit starting with the word "pick”. Make sure the first commit says "pick" and change the rest from "pick" to "squash”. This will squash each commit into the previous commit, which will continue until every commit is squashed into the first commit. Save and close the editor. It will give you the opportunity to change the commit message. Save and close the editor again.
+
+3. Finally while pushing, append --force-with-lease
+   ```bash
+   git push origin feature_branch --force-with-lease
+   ```

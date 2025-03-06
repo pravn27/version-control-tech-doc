@@ -91,7 +91,7 @@ echo "Select GitHub account to use:"
 echo "1) Personal"
 echo "2) Work"
 read -p "Enter choice (1/2): " choice
-
+ssh-add -D
 if [ "$choice" == "1" ]; then
     git config --global user.name "Personal Name"
     git config --global user.email "your_email_1@example.com"
