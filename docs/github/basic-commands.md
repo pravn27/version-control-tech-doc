@@ -6,14 +6,14 @@ sidebar_position: 2
 
 ## List of Basic Commands Frequently Used
 
-| Command                            | Description                                                                                        | Example                                                      |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| `git init`                         | Initialize a new Git repository                                                                    | `git init`                                                   |
-| `git clone [remote-url]`           | Clone an existing repository from remote                                                           | `git clone https://github.com/user/repo.git`                 |
-| `git status`                       | Show the working directory status of modified files                                                | `git status`                                                 |
+| Command                            | Description                                                                                        | Example                                                      | Aliases |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ------- |
+| `git init`                         | Initialize a new Git repository                                                                    | `git init`                                                   |         |
+| `git clone [remote-url]`           | Clone an existing repository from remote                                                           | `git clone https://github.com/user/repo.git`                 | `cl`    |
+| `git status`                       | Show the working directory status of modified files                                                | `git status`                                                 | `st`    |
 | `git add [path of files]`          | Add files to the staging area                                                                      | `git add filename1 filename2`                                |
 | `git add .`                        | Add all modified files to the staging area                                                         | `git add .`                                                  |
-| `git commit`                       | Commit changes to the repository                                                                   | `git commit -m "Proper / Meaningful Commit message"`         |
+| `git commit`                       | Commit changes to the repository                                                                   | `git commit -m "Proper / Meaningful Commit message"`         | `cm`    |
 | `git commit --amend`               | Update / modify the very latest commit message                                                     | `git commit --amend`                                         |
 | `git push origin [branch-name]`    | Push changes to a remote repository branch                                                         | `git push origin main`                                       |
 | `git pull origin [branch-name]`    | Fetch and merge changes from a remote repository                                                   | `git pull origin main`                                       |
